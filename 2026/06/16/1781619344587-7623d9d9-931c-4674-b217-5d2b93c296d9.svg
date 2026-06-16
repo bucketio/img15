@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Windows 更新取舍封面</title>
+  <desc id="desc">一台电脑屏幕上显示更新、安全盾牌和时间安排，表达 Windows 更新需要管理而不是彻底关闭。</desc>
+  <rect width="1200" height="675" fill="#f4f7fb"/>
+  <rect x="70" y="70" width="1060" height="535" rx="28" fill="#ffffff" stroke="#d7dee8" stroke-width="4"/>
+  <rect x="120" y="125" width="520" height="340" rx="22" fill="#eaf3ff" stroke="#b8d6ff" stroke-width="3"/>
+  <rect x="160" y="165" width="155" height="155" fill="#2578d5"/>
+  <rect x="330" y="165" width="155" height="155" fill="#43a5f5"/>
+  <rect x="160" y="335" width="155" height="85" fill="#43a5f5"/>
+  <rect x="330" y="335" width="155" height="85" fill="#2578d5"/>
+  <path d="M760 165c70 0 126 56 126 126s-56 126-126 126-126-56-126-126 56-126 126-126Z" fill="#f9fbff" stroke="#9db8d8" stroke-width="5"/>
+  <path d="M760 207v87l62 36" fill="none" stroke="#1f6fc7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M970 195l68 28v67c0 58-30 106-68 126-38-20-68-68-68-126v-67l68-28Z" fill="#e8f8f1" stroke="#36a46d" stroke-width="5"/>
+  <path d="M938 292l24 25 48-57" fill="none" stroke="#1f8d58" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="540" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="46" font-weight="700" fill="#172033">Windows 更新到底要不要关？</text>
+  <text x="122" y="585" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="25" fill="#52606f">不是一刀切关闭，而是学会安排时间、控制风险</text>
+</svg>
