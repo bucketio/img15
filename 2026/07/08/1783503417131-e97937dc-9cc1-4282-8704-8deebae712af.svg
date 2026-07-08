@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">普通用户的空间判断清单</title>
+  <desc id="desc">列出需要清理固态硬盘空间的常见信号和优先处理项。</desc>
+  <rect width="900" height="430" fill="#fbfcff"/>
+  <text x="48" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#182033">不用盯百分比，看这些信号</text>
+  <g transform="translate(72 125)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="350" height="245" rx="18" fill="#ffffff" stroke="#d9deea" stroke-width="3"/>
+    <text x="28" y="42" font-size="24" font-weight="700" fill="#a33d2e">该清理的信号</text>
+    <text x="34" y="88" font-size="20" fill="#334155">• C 盘只剩 10GB 到 20GB</text>
+    <text x="34" y="126" font-size="20" fill="#334155">• 更新提示空间不足</text>
+    <text x="34" y="164" font-size="20" fill="#334155">• 安装、解压经常失败</text>
+    <text x="34" y="202" font-size="20" fill="#334155">• 缓存软件明显变卡</text>
+  </g>
+  <g transform="translate(480 125)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="350" height="245" rx="18" fill="#ffffff" stroke="#d9deea" stroke-width="3"/>
+    <text x="28" y="42" font-size="24" font-weight="700" fill="#24704d">优先处理的地方</text>
+    <text x="34" y="88" font-size="20" fill="#334155">• 回收站和下载目录</text>
+    <text x="34" y="126" font-size="20" fill="#334155">• 微信、浏览器缓存</text>
+    <text x="34" y="164" font-size="20" fill="#334155">• 大型游戏和安装包</text>
+    <text x="34" y="202" font-size="20" fill="#334155">• 照片视频迁移到其他盘</text>
+  </g>
+</svg>
