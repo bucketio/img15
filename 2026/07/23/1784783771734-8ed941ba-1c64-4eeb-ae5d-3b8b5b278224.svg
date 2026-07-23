@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">银狐木马防护封面</title>
+  <desc id="desc">办公电脑收到伪装文件，背后连接远程控制和数据窃取风险。</desc>
+  <rect width="1200" height="675" fill="#f5f7fb"/>
+  <rect x="86" y="72" width="1028" height="530" rx="34" fill="#ffffff" stroke="#d9deea" stroke-width="3"/>
+  <text x="130" y="160" font-family="Arial, sans-serif" font-size="50" font-weight="700" fill="#182033">银狐病毒是什么？</text>
+  <text x="132" y="216" font-family="Arial, sans-serif" font-size="27" fill="#5f6b80">看懂它的攻击逻辑、防范和中毒后处置</text>
+  <rect x="140" y="315" width="320" height="170" rx="24" fill="#edf5ff" stroke="#c9d7ef" stroke-width="3"/>
+  <rect x="178" y="360" width="92" height="70" rx="12" fill="#ffffff" stroke="#9db7dd" stroke-width="3"/>
+  <text x="190" y="456" font-family="Arial, sans-serif" font-size="22" fill="#2f6bd9">办公文件</text>
+  <path d="M272 395 H420" stroke="#607089" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+  <rect x="510" y="300" width="210" height="200" rx="28" fill="#202938"/>
+  <text x="556" y="388" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">远程控制</text>
+  <text x="548" y="435" font-family="Arial, sans-serif" font-size="22" fill="#cbd5e1">窃密 / 诈骗 / 跳板</text>
+  <path d="M730 400 H845" stroke="#607089" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+  <rect x="870" y="315" width="210" height="170" rx="24" fill="#fff5df" stroke="#e7c878" stroke-width="3"/>
+  <text x="920" y="386" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#946200">风险扩散</text>
+  <text x="912" y="430" font-family="Arial, sans-serif" font-size="21" fill="#334155">账号 / 文件 / 内网</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#607089"/>
+    </marker>
+  </defs>
+</svg>
