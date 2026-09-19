@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">
+  <rect width="900" height="460" fill="#f7f9fb"/>
+  <rect x="24" y="24" width="408" height="412" rx="16" fill="#ffffff" stroke="#2f6fb7" stroke-width="3"/>
+  <rect x="468" y="24" width="408" height="412" rx="16" fill="#ffffff" stroke="#d9822b" stroke-width="3"/>
+
+  <!-- 左：功能检查 -->
+  <circle cx="120" cy="96" r="30" fill="#2f6fb7"/>
+  <text x="120" y="105" font-size="26" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="168" y="92" font-size="26" font-weight="bold" fill="#1c3d5e">功能检查</text>
+  <text x="168" y="118" font-size="15" fill="#2f6fb7" font-weight="bold">Function Test · 定性判断</text>
+
+  <text x="48" y="168" font-size="17" fill="#333333">核心问题：</text>
+  <text x="140" y="168" font-size="17" font-weight="bold" fill="#2f6fb7">“它能不能干活？”</text>
+
+  <line x1="48" y1="186" x2="408" y2="186" stroke="#dce6f0" stroke-width="2"/>
+
+  <rect x="48" y="204" width="360" height="42" rx="8" fill="#eaf2fa"/>
+  <text x="62" y="231" font-size="15" fill="#333333">· 在规定运行模式下执行功能</text>
+  <rect x="48" y="254" width="360" height="42" rx="8" fill="#eaf2fa"/>
+  <text x="62" y="281" font-size="15" fill="#333333">· 覆盖所有工作模式（含休眠/唤醒）</text>
+  <rect x="48" y="304" width="360" height="42" rx="8" fill="#eaf2fa"/>
+  <text x="62" y="331" font-size="15" fill="#333333">· 应力试验前、中、后反复执行</text>
+
+  <rect x="48" y="360" width="360" height="52" rx="10" fill="#2f6fb7"/>
+  <text x="228" y="384" font-size="15" fill="#ffffff" text-anchor="middle">输出：正常 / 失效</text>
+  <text x="228" y="404" font-size="13" fill="#cfe2f4" text-anchor="middle">（失效需定位到 VW 80101 等级）</text>
+
+  <!-- 右：参数检查 -->
+  <circle cx="564" cy="96" r="30" fill="#d9822b"/>
+  <text x="564" y="104" font-size="20" fill="#ffffff" text-anchor="middle" font-family="Consolas,monospace">Ω</text>
+  <text x="612" y="92" font-size="26" font-weight="bold" fill="#7a4210">参数检查</text>
+  <text x="612" y="118" font-size="15" fill="#d9822b" font-weight="bold">Parameter Test · 定量测量</text>
+
+  <text x="492" y="168" font-size="17" fill="#333333">核心问题：</text>
+  <text x="584" y="168" font-size="17" font-weight="bold" fill="#d9822b">“它干得到底怎么样？”</text>
+
+  <line x1="492" y1="186" x2="852" y2="186" stroke="#f2e4d2" stroke-width="2"/>
+
+  <rect x="492" y="204" width="360" height="42" rx="8" fill="#fbf1e5"/>
+  <text x="506" y="231" font-size="15" fill="#333333">· 测量静态电流、工作电流、电压等</text>
+  <rect x="492" y="254" width="360" height="42" rx="8" fill="#fbf1e5"/>
+  <text x="506" y="281" font-size="15" fill="#333333">· 与数据表限值逐项比对</text>
+  <rect x="492" y="304" width="360" height="42" rx="8" fill="#fbf1e5"/>
+  <text x="506" y="331" font-size="15" fill="#333333">· 规定测点、规定温度下测量</text>
+
+  <rect x="492" y="360" width="360" height="52" rx="10" fill="#d9822b"/>
+  <text x="672" y="384" font-size="15" fill="#ffffff" text-anchor="middle" font-family="Consolas,monospace">输出：数值 vs 限值</text>
+  <text x="672" y="404" font-size="13" fill="#fbe8d3" text-anchor="middle">例：静态电流 ≤ 100 µA</text>
+</svg>
