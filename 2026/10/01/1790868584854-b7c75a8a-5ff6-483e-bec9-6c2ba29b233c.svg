@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1090" width="760" height="1090">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/>
+  </linearGradient>
+  <filter id="shadowSm">
+    <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+  </marker>
+  <marker id="arrGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/>
+  </marker>
+</defs>
+
+<rect width="760" height="1090" fill="#F8FAFC"/>
+
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">runtime 是怎么选出来的</text>
+<text x="380" y="76" font-size="14" fill="#64748B" text-anchor="middle">先有 provider 和 model,才轮到选 runtime,自上而下依次问</text>
+
+<!-- Start -->
+<g filter="url(#shadowSm)">
+  <rect x="70" y="100" width="360" height="50" rx="12" fill="#EFF6FF" stroke="#93C5FD"/>
+</g>
+<text x="250" y="130" font-size="14" font-weight="700" fill="#1E40AF" text-anchor="middle">provider 和 model 已经解析完</text>
+<line x1="250" y1="152" x2="250" y2="178" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- Diamond 1 -->
+<g filter="url(#shadowSm)">
+  <polygon points="250,180 400,245 250,310 100,245" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+</g>
+<text x="250" y="241" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">模型级 runtime 策略?</text>
+<text x="250" y="262" font-size="11" fill="#64748B" text-anchor="middle">精确模型优先,provider 通配其次</text>
+<line x1="400" y1="245" x2="518" y2="245" stroke="#22C55E" stroke-width="2" marker-end="url(#arrGreen)"/>
+<text x="459" y="237" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">有</text>
+<line x1="250" y1="312" x2="250" y2="352" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+<text x="262" y="337" font-size="12" font-weight="700" fill="#64748B">没有</text>
+
+<!-- Diamond 2 -->
+<g filter="url(#shadowSm)">
+  <polygon points="250,354 400,419 250,484 100,419" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+</g>
+<text x="250" y="415" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">provider 级 runtime 策略?</text>
+<text x="250" y="436" font-size="11" fill="#64748B" text-anchor="middle">整个 provider 共用一个</text>
+<line x1="400" y1="419" x2="518" y2="419" stroke="#22C55E" stroke-width="2" marker-end="url(#arrGreen)"/>
+<text x="459" y="411" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">有</text>
+<line x1="250" y1="486" x2="250" y2="526" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+<text x="262" y="511" font-size="12" font-weight="700" fill="#64748B">没有</text>
+
+<!-- Diamond 3 -->
+<g filter="url(#shadowSm)">
+  <polygon points="250,528 400,593 250,658 100,593" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+</g>
+<text x="250" y="589" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">auto 模式:有人认领?</text>
+<text x="250" y="610" font-size="11" fill="#64748B" text-anchor="middle">已注册的插件 runtime 认领这对组合</text>
+<line x1="400" y1="593" x2="518" y2="593" stroke="#22C55E" stroke-width="2" marker-end="url(#arrGreen)"/>
+<text x="459" y="585" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">有</text>
+<line x1="250" y1="660" x2="250" y2="700" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+<text x="262" y="685" font-size="12" font-weight="700" fill="#64748B">没人认领</text>
+
+<!-- Adopt boxes -->
+<g filter="url(#shadowSm)">
+  <rect x="520" y="220" width="200" height="50" rx="12" fill="#F0FDF4" stroke="#86EFAC"/>
+  <rect x="520" y="394" width="200" height="50" rx="12" fill="#F0FDF4" stroke="#86EFAC"/>
+  <rect x="520" y="568" width="200" height="50" rx="12" fill="#F0FDF4" stroke="#86EFAC"/>
+</g>
+<text x="620" y="250" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">就用这个 runtime</text>
+<text x="620" y="424" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">就用这个 runtime</text>
+<text x="620" y="598" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">就用认领的那个</text>
+
+<!-- Fallback -->
+<g filter="url(#shadowSm)">
+  <rect x="100" y="702" width="300" height="64" rx="12" fill="#FFF7ED" stroke="#FDBA74"/>
+</g>
+<text x="250" y="730" font-size="15" font-weight="700" fill="#9A3412" text-anchor="middle">回落到 openclaw 内置 runtime</text>
+<text x="250" y="753" font-size="12" fill="#B45309" text-anchor="middle">兼容兜底;要严格,就写明 runtime id</text>
+<line x1="250" y1="768" x2="250" y2="808" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- End -->
+<g filter="url(#shadowSm)">
+  <rect x="100" y="810" width="300" height="50" rx="12" fill="url(#gBlue)"/>
+</g>
+<text x="250" y="841" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">开始执行这一轮</text>
+
+<!-- Merge lines from adopt boxes -->
+<path d="M720,245 H745 V835 H402" fill="none" stroke="#22C55E" stroke-width="2" marker-end="url(#arrGreen)"/>
+<path d="M720,419 H745" fill="none" stroke="#22C55E" stroke-width="2"/>
+<path d="M720,593 H745" fill="none" stroke="#22C55E" stroke-width="2"/>
+
+<!-- Notes -->
+<g filter="url(#shadowSm)">
+  <rect x="40" y="900" width="330" height="160" rx="14" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <rect x="390" y="900" width="330" height="160" rx="14" fill="#FEF2F2" stroke="#FCA5A5"/>
+</g>
+<text x="60" y="930" font-size="14" font-weight="700" fill="#991B1B">显式指定插件 runtime 时</text>
+<text x="60" y="954" font-size="13" fill="#7F1D1D">harness 缺失,或带不动这条路由、这种鉴权,</text>
+<text x="60" y="974" font-size="13" fill="#7F1D1D">直接失败,不会悄悄换一个。</text>
+<text x="60" y="1002" font-size="12" fill="#B91C1C">例外:harness 声明 OpenClaw 能原样复现请求时</text>
+<text x="60" y="1020" font-size="12" fill="#B91C1C">(codex 用在自定义请求头、超时等覆盖上),</text>
+<text x="60" y="1038" font-size="12" fill="#B91C1C">会保留这些设置,回到 OpenClaw 去跑。</text>
+
+<text x="410" y="930" font-size="14" font-weight="700" fill="#991B1B">开始执行之后</text>
+<text x="410" y="954" font-size="13" fill="#7F1D1D">中途失败,不会换另一个 runtime</text>
+<text x="410" y="974" font-size="13" fill="#7F1D1D">把这一轮重放一遍。</text>
+<text x="410" y="1002" font-size="12" fill="#B91C1C">选择阶段还有两条:会话上显式设的</text>
+<text x="410" y="1020" font-size="12" fill="#B91C1C">runtime(兼容时)优先于配置策略;</text>
+<text x="410" y="1038" font-size="12" fill="#B91C1C">ACP 会话沿用自己的 ACP 后端。</text>
+</svg>
