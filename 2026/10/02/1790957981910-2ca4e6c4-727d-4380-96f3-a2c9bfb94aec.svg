@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 810" width="760" height="810">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="810" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">留下来:旧会话的东西怎么写进记忆</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">三条路,触发的时机、写的人、写出来的东西都不一样</text>
+<rect x="40" y="100" width="680" height="178" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5" filter="url(#shadowSm)"/>
+<rect x="40" y="100" width="130" height="178" rx="12" fill="url(#gOrange)" filter="url(#shadowSm)"/>
+<text x="105" y="194" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="middle">重置时</text>
+<text x="190" y="130" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">触发</text>
+<text x="250" y="130" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">/new、/reset,或自动重置之后</text>
+<text x="190" y="154" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">谁写</text>
+<text x="250" y="154" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">session-memory 钩子,不调模型</text>
+<text x="190" y="178" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写什么</text>
+<text x="250" y="178" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">最近 15 条 user/assistant 原文,</text>
+<text x="250" y="202" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">滤掉斜杠命令和工具消息</text>
+<text x="190" y="226" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写到哪</text>
+<text class="mono" x="250" y="226" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">memory/YYYY-MM-DD-HHMM.md</text>
+<text x="190" y="262" font-size="12" font-weight="700" fill="#B45309" text-anchor="start">是摘录,不是模型写的摘要</text>
+<rect x="40" y="290" width="680" height="178" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5" filter="url(#shadowSm)"/>
+<rect x="40" y="290" width="130" height="178" rx="12" fill="url(#gOrange)" filter="url(#shadowSm)"/>
+<text x="105" y="384" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="middle">压缩前</text>
+<text x="190" y="320" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">触发</text>
+<text x="250" y="320" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">接近压缩阈值,每个压缩周期一次</text>
+<text x="190" y="344" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">谁写</text>
+<text x="250" y="344" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">模型,静默跑一回合</text>
+<text x="190" y="368" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写什么</text>
+<text x="250" y="368" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">值得长期记的内容,只追加</text>
+<text x="190" y="392" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写到哪</text>
+<text class="mono" x="250" y="392" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">memory/YYYY-MM-DD.md</text>
+<text x="190" y="452" font-size="12" font-weight="700" fill="#B45309" text-anchor="start">默认开启;无痕、心跳、CLI 运行时、沙箱非 rw 时跳过</text>
+<rect x="40" y="480" width="680" height="178" rx="12" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1.5" filter="url(#shadowSm)"/>
+<rect x="40" y="480" width="130" height="178" rx="12" fill="url(#gPurple)" filter="url(#shadowSm)"/>
+<text x="105" y="574" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="middle">转录入索引</text>
+<text x="190" y="510" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">触发</text>
+<text x="250" y="510" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">转录更新后防抖 5 秒;要先开启</text>
+<text x="190" y="534" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">谁写</text>
+<text x="250" y="534" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">后台同步</text>
+<text x="190" y="558" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写什么</text>
+<text x="250" y="558" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">切成约 400 token 的块,先脱敏;</text>
+<text x="250" y="582" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">有向量 provider 才做 embedding</text>
+<text x="190" y="606" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">写到哪</text>
+<text x="250" y="606" font-size="12.5" font-weight="400" fill="#0F172A" text-anchor="start">记忆索引(SQLite)</text>
+<text x="190" y="642" font-size="12" font-weight="700" fill="#B45309" text-anchor="start">排除 dreaming、cron、心跳和被 forget 的会话</text>
+<rect x="40" y="676" width="680" height="110" rx="12" fill="#0F172A" stroke="#0F172A" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="64" y="706" font-size="14" font-weight="700" fill="#FBBF24" text-anchor="start">两点</text>
+<text x="64" y="734" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">日记和转录都不会自动进提示词,要靠 memory_search 去取。</text>
+<text x="64" y="756" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">文件名不一样:重置时带时分,压缩前只有日期。</text>
+</svg>
